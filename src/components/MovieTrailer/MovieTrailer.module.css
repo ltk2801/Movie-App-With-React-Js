@@ -1,0 +1,42 @@
+.movie-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  /* align-items: center; */
+  color: white;
+  padding: 40px;
+  gap: 4rem;
+  border: 2px solid #003049;
+  margin: 3rem;
+  border-radius: 10px;
+}
+.error {
+  color: red;
+  text-align: center;
+}
+.btn-div {
+  display: flex;
+  gap: 2rem;
+}
+
+.movie-content {
+  padding: 1rem;
+}
+
+.movie-content h3 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
+  margin-bottom: 1rem;
+}
+.movie-content h5 {
+  margin: 1rem 0;
+}
+.movie-content p {
+  font-weight: lighter;
+}
+.movie-content img {
+  height: 400px;
+  width: 400px;
+  object-fit: fill;
+}

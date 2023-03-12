@@ -7,13 +7,6 @@ const Navbar = (props) => {
   const navigate = useNavigate();
   const [isTransparent, setIsTransparent] = useState(true);
 
-  const homeHandleClick = () => {
-    navigate("/");
-  };
-  const searchHandlerClick = () => {
-    navigate("/search");
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
@@ -27,6 +20,13 @@ const Navbar = (props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const homeHandleClick = () => {
+    navigate("/");
+  };
+  const searchHandlerClick = () => {
+    navigate("/search");
+  };
+
   const navbarClasses = isTransparent
     ? `${styles.navbar} + ${styles.transparent} `
     : `${styles.navbar} + ${styles["not-transparent"]} `;
@@ -34,7 +34,7 @@ const Navbar = (props) => {
   return (
     <div className={navbarClasses}>
       <h3 className={styles["navbar-brand"]} onClick={homeHandleClick}>
-        Movie App
+        Movies App
       </h3>
       <SearchIcon
         className={styles["navbar-icon"]}

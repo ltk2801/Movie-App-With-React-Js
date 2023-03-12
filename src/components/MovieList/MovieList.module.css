@@ -1,0 +1,28 @@
+.movies {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.movie {
+  width: 12%;
+}
+
+.movie img {
+  width: 95%;
+  height: auto;
+  border-radius: 5px;
+}
+.title {
+  color: white;
+  font-weight: bold;
+  padding: 0 14px;
+  margin-bottom: 6px;
+}
+
+.movie img:hover {
+  transform: scale(1.1, 1.1);
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}

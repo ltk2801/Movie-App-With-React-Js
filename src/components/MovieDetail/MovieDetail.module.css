@@ -1,0 +1,48 @@
+.detail {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.detail-content img {
+  height: 500px;
+  width: 500px;
+  object-fit: fill;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.detail-content h2 {
+  margin-bottom: 2rem;
+}
+
+.detail-content-movie {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.detail-content-movie h6 {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.detail-content-movie span {
+  font-size: 14px;
+}
+
+.grid-full {
+  grid-column: 1/-1;
+}
+
+.btn-div {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}

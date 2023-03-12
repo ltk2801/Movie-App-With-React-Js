@@ -5,9 +5,10 @@
   height: 2rem;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 2rem;
   align-items: center;
   transition: background-color 0.3s ease;
+  z-index: 1;
 }
 .transparent {
   background-color: transparent;
@@ -17,9 +18,9 @@
 }
 
 .navbar-icon {
-  height: 90%;
+  height: 20px;
   cursor: pointer;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 .navbar-brand {
