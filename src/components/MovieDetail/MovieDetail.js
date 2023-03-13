@@ -85,8 +85,12 @@ const MovieDetail = (props) => {
           </div>
         </div>
         <div className={styles["btn-div"]}>
-          <Button type="button">Play</Button>
-          <Button type="button">My List</Button>
+          <Button type="button" onClick={props.onShowTrailer}>
+            Movie
+          </Button>
+          <Button type="button" onClick={props.onShowTrailer}>
+            Trailer
+          </Button>
         </div>
       </div>
     </div>

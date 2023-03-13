@@ -14,7 +14,6 @@ const MovieDetail = (props) => {
   useEffect(() => {
     const transformData = (data) => {
       setCastMovie(data.cast.slice(0, 20));
-      console.log(data.cast);
     };
 
     sendRequest(
@@ -37,7 +36,7 @@ const MovieDetail = (props) => {
       <h2>Một số diễn viên chính</h2>
       <div className={styles["casts-list"]}>
         {castMovie.map((data) => (
-          <div className={styles["cast-detail"]}>
+          <div className={styles["cast-detail"]} key={data.id}>
             <img
               src={`https:/image.tmdb.org/t/p/original${data.profile_path}`}
               alt={data.id}
